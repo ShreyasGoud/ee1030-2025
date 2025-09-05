@@ -99,11 +99,35 @@ The vector in the direction of the vector $\hat{i} - 2\hat{j} + 2\hat{k}$ that h
 \begin{frame}{Given Information}
     Let us assume the given vector to be vector \textbf{A}
 
+To check whether the given vector is parallel with the vectors given in the options.\\
+Let the vectors in the options be \textbf{B1, B2, B3, B4}. For parallel nature, the rank of \brak{\textbf{0 A B1}} must be 1.
+
 \begin{align}
-    \textbf{A} = \myvec{1 \\ -2 \\ 2}
-    \label{4.1}
+    \brak{\textbf{0 A B1}} = \myvec{0&1&1\\0&-2&-2\\0&2&2}
+    \label{4.2}
 \end{align}
 
+\begin{align}
+    \brak{\textbf{0 A B2}} = \myvec{0&1&1\\0&-2&-2\\0&2&0}
+    \label{4.3}
+\end{align}
+
+
+\end{frame}
+\begin{frame}{Given Information}
+
+\begin{align}
+    \brak{\textbf{0 A B3}} = \myvec{0&1&3\\0&-2&-6\\0&2&6}
+    \label{4.4}
+\end{align}
+
+\begin{align}
+    \brak{\textbf{0 A B4}} = \myvec{0&1&9\\0&-2&-18\\0&2&18}
+    \label{4.5}
+\end{align}
+
+Through rank manipulation we get the matrices \textbf{B1, B3 and B4} to have a rank of 1.\\
+They are parallel to \textbf{A}\\
 \end{frame}
 \begin{frame}{Solution}
     First we find the unit vector in the direction of the given vector.\\
@@ -146,14 +170,14 @@ From \ref{4.5}, the vector of magnitude $9$ along this direction is given by
 \end{align}
 
 \begin{align}
-    \implies 3\myvec{1 \\ -2 \\ 2} = 3(\hat{i}-2\hat{j}+2\hat{k})
+    \implies 3\myvec{1 \\ -2 \\ 2} = \textbf{B3}
     \label{4.7}
 \end{align}
 \end{frame}
 
 
 \begin{frame}{Final Answer}
-Therefore the required vector is $3(\hat{i}-2\hat{j}+2\hat{k})$. This is option (b).\\
+Therefore the required vector is \textbf{B3}. This is option (b).\\
 \end{frame}
 
 \begin{frame}[fragile]
